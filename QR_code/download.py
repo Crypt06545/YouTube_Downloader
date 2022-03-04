@@ -25,7 +25,7 @@ title = screen.title('Youtube Download')
 canvas = Canvas(screen, width=500, height=500)
 canvas.pack()
 
-logo_img = PhotoImage(file='D:\\pythonProject\\QR_code\\youtube.png')
+logo_img = PhotoImage(file='QR_code\\youtube.png')
 logo_img = logo_img.subsample(2, 2)
 canvas.create_image(250, 80, image=logo_img)
 
@@ -44,7 +44,7 @@ canvas.create_window(250, 220, window=link_field)
 download_btn = Button(screen, text="Download File",bg='green', padx='22', pady='5',font=('Arial', 15), fg='#fff', command=download_file)
 canvas.create_window(250, 390, window=download_btn)
 
-img =PhotoImage(file='D:\\pythonProject\\QR_code\\yt.png')
+img =PhotoImage(file='QR_code\\yt.png')
 screen.iconphoto(False,img)
 
 screen.mainloop()
